@@ -98,6 +98,7 @@ from oumi.datasets.vision_language.vision_dpo_jsonlines import (
 )
 from oumi.datasets.vision_language.vision_jsonlines import VLJsonlinesDataset
 from oumi.datasets.vision_language.vqav2_small import Vqav2SmallDataset
+from oumi.datasets.vision_language.m2sv_sft_dataset import M2SVSftDataset
 
 __all__ = [
     "AlpacaDataset",
@@ -155,4 +156,5 @@ __all__ = [
     "WikiTextDataset",
     "WildChatDataset",
     "YouTubeCommonsDataset",
+    "M2SVSftDataset",
 ]
