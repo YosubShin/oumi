@@ -1,0 +1,27 @@
+project: oumi
+
+default_backend: koa
+
+cuda_minor_version: 12.8
+
+env_watch:
+  - scripts/setup_env.sh
+  - requirements.txt
+  - requirements.lock
+  - requirements-dev.txt
+  - pyproject.toml
+  - poetry.lock
+  - uv.lock
+  - environment.yml
+
+# Add snapshot_excludes if you want to skip directories during submissions
+snapshot_excludes:
+  - tests
+  - notebooks
+  - docs
+  - data
+  - .github
+  - .vscode
+  - configs/apis
+  - configs/examples
+  - configs/recipes
